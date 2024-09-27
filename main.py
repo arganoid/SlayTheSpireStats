@@ -19,7 +19,7 @@ class WinsRuns:
     def __str__(self):
         ratio = "--" if self.runs == 0 else f"{(self.wins / self.runs) * 100:.1f}%"
         title = f"{self.title} wins/losses/runs - ratio:"
-        return  f"{title:40} {self.wins}/{self.runs - self.wins}/{self.runs}\t{ratio}"
+        return f"{title:40} {self.wins}/{self.runs - self.wins}/{self.runs}\t{ratio}"
 
 
 totals = WinsRuns("Total")
